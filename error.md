@@ -1,0 +1,3 @@
+# 仔细阅读这个项目和 C:\Users\lumao\Desktop\开发说明\error.md 优化得点
+1.   C:\Users\lumao\Desktop\开发说明\results\state.json task_failures 是不是只要记录 下次就不发了？ 暂时不要这样 有些可能是网络问题 没有成功发送，我们都 尽力尝试行吗？现在逻辑应该是 检测到1次就跳过群组打广告了
+2. 我观察到在 打广告阶段 有些群组被封禁了，你最后发送得是收藏夹得消息框。所以优化一下，在点完 view group 后，查找到 input 或者 send button 后，增加个逻辑 判断 有没有data\images\shoucang.png  收藏夹页面得图标，有的话，就代表群组被封禁了。记住刚才点击view group得坐标再尝试1次也是这样得话意味着可能被封禁了，可以在results\state.json 加个被封禁得群组参数，下次执行任务 跳过。

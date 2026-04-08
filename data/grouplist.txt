@@ -1,0 +1,14 @@
+# 群组/频道列表格式:
+# link,cooldown_minutes,can_send_links,is_channel
+#   - link: 群组/频道链接
+#   - cooldown_minutes: 冷却时间(分钟)
+#   - can_send_links: 是否可发送链接 (true/false)
+#   - is_channel: 是否为频道 (true/false, 默认为false表示群组)
+#
+# 示例:
+# https://t.me/groupname,60,true,false  - 群组，60分钟冷却，可发链接
+# https://t.me/channelname,15,false,true - 频道，15分钟冷却，不可发链接
+
+# 公开仓库请只保留示例数据，不要提交真实目标列表
+https://t.me/example_group,60,false,false
+https://t.me/example_channel,30,false,true

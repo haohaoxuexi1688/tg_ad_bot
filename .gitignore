@@ -1,0 +1,29 @@
+# Ignore all directories
+__pycache__/
+.pytest_cache/
+accounts/
+backup/
+results/
+tportable-x64.6.4.2/
+.venv/
+venv/
+
+# Ignore specific files
+需求说明.md
+erro.md
+generate_messages.py
+mock_breaker_test_v2.py
+mock_breaker_test.py
+mock_cooldown_test.py
+mock_runner.py
+test_main.py
+test_message_format.py
+test_rejoin_flow.py
+.env
+.env.*
+
+# Ignore Python cache files
+*.py[co]
+
+# Ignore local runtime data backups
+data/*.local.txt
